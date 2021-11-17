@@ -18,7 +18,7 @@ jobs:
         with:
           push: true
           tags: ghcr.io/poohcid/bookinfo-ratings:dev
-            - name: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v2
       - name: get-credentials
         uses: google-github-actions/get-gke-credentials@main
