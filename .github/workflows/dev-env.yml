@@ -44,4 +44,6 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
+      - run: curl http://itkmitl.bookinfo.dev.opsta.net/student8/ratings/health | grep "Ratings is working"
+      - run: echo $?
       
