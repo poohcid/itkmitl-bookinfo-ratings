@@ -35,7 +35,7 @@ jobs:
         with:
           helm: helm3
           release: bookinfo-dev-ratings
-          namespace: student[X]-bookinfo-dev
+          namespace: student8-bookinfo-dev
           chart: k8s/helm
           value-files: k8s/helm-values/values-bookinfo-dev-ratings.yaml
       
