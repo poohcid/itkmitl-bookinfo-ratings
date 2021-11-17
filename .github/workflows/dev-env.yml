@@ -18,6 +18,10 @@ jobs:
         with:
           push: true
           tags: ghcr.io/poohcid/bookinfo-ratings:dev
+  deploy:
+    needs: build
+    runs-on: ubuntu-20.04
+    steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: get-credentials
